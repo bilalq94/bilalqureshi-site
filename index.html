@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilal Qureshi - CEO, Product Manager, Builder</title>
+  <meta name="description" content="Product Manager at CVS Health. CEO of Alpha Software Group. Building products that accelerate human potential.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #06b6d4 0%, #1e3a8a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold gradient-text">BQ</a>
+        <div class="hidden md:flex gap-8">
+          <a href="#ventures" class="hover:text-cyan-400 transition-colors">Ventures</a>
+          <a href="#professional" class="hover:text-cyan-400 transition-colors">Professional</a>
+          <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+          <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="#ventures" class="block py-2 hover:text-cyan-400 transition-colors">Ventures</a>
+        <a href="#professional" class="block py-2 hover:text-cyan-400 transition-colors">Professional</a>
+        <a href="#about" class="block py-2 hover:text-cyan-400 transition-colors">About</a>
+        <a href="#contact" class="block py-2 hover:text-cyan-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-20">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h1 class="text-5xl md:text-7xl font-black mb-6">
+        Bilal Qureshi
+      </h1>
+      <p class="text-2xl md:text-3xl mb-8 text-gray-400">
+        CEO. Product Manager. Father of Musa.
+      </p>
+      <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto">
+        Building products that matter at <span class="text-cyan-400">CVS Health</span> by day.<br/>
+        Building software ventures by night.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mb-16">
+        <a href="#ventures" class="bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-2xl">
+          View My Work →
+        </a>
+        <a href="#contact" class="bg-gray-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-700 transition-all">
+          Get In Touch
+        </a>
+      </div>
+      
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+          <div class="text-3xl font-bold text-cyan-400">📊</div>
+          <div class="text-sm text-gray-400 mt-2">Product Manager</div>
+          <div class="text-xs text-gray-500">CVS Health</div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+          <div class="text-3xl font-bold text-cyan-400">🏢</div>
+          <div class="text-sm text-gray-400 mt-2">CEO</div>
+          <div class="text-xs text-gray-500">Alpha Software</div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+          <div class="text-3xl font-bold text-cyan-400">🎨</div>
+          <div class="text-sm text-gray-400 mt-2">Founder</div>
+          <div class="text-xs text-gray-500">Delta Design</div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+          <div class="text-3xl font-bold text-cyan-400">🚀</div>
+          <div class="text-sm text-gray-400 mt-2">3 Ventures</div>
+          <div class="text-xs text-gray-500">Active</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Focus -->
+  <section class="py-20 px-4 bg-gradient-to-r from-cyan-900 to-blue-900">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 md:p-12">
+        <div class="text-sm text-cyan-300 mb-2">CURRENT FOCUS</div>
+        <h2 class="text-4xl font-bold mb-6">🤖 LearnBot</h2>
+        <p class="text-xl text-gray-300 mb-6">
+          Gamified study timer helping students stay focused and build study streaks.
+        </p>
+        <div class="flex flex-wrap gap-6 mb-8">
+          <div>
+            <div class="text-3xl font-bold text-cyan-300">50+</div>
+            <div class="text-sm text-gray-400">Active Users</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-cyan-300">500+</div>
+            <div class="text-sm text-gray-400">Study Sessions</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-cyan-300">100%</div>
+            <div class="text-sm text-gray-400">Bootstrapped</div>
+          </div>
+        </div>
+        <a href="https://learnbot.us" target="_blank" class="inline-block bg-white text-blue-900 px-6 py-3 rounded-xl font-bold hover:scale-105 transition-all">
+          Visit LearnBot →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventures Section -->
+  <section id="ventures" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black mb-4 text-center">Ventures</h2>
+      <p class="text-xl text-gray-400 text-center mb-16">Building the next generation of apps</p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Alpha Software Group -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover-lift border border-gray-700">
+          <div class="text-5xl mb-4">🐺</div>
+          <h3 class="text-3xl font-bold mb-4">Alpha Software Group LLC</h3>
+          <p class="text-gray-400 mb-6">
+            Next generation of apps, accelerating human potential.
+          </p>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-cyan-400">LearnBot</span>
+                <span class="text-xs bg-green-500 text-white px-2 py-1 rounded-full">Active</span>
+              </div>
+              <p class="text-sm text-gray-400">Gamified study timer</p>
+              <a href="https://learnbot.us" target="_blank" class="text-xs text-cyan-400 hover:underline">learnbot.us →</a>
+            </div>
+            
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-gray-400">LegalPath</span>
+                <span class="text-xs bg-yellow-500 text-gray-900 px-2 py-1 rounded-full">In Development</span>
+              </div>
+              <p class="text-sm text-gray-400">Legal document automation</p>
+            </div>
+            
+            <div class="bg-gray-800 bg-opacity-50 rounded-xl p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-gray-400">DarkMaps</span>
+                <span class="text-xs bg-blue-500 text-white px-2 py-1 rounded-full">Concept</span>
+              </div>
+              <p class="text-sm text-gray-400">Gamified travel exploration</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delta Design -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover-lift border border-gray-700">
+          <div class="text-5xl mb-4">🎨</div>
+          <h3 class="text-3xl font-bold mb-4">Delta Design LLC</h3>
+          <p class="text-gray-400 mb-6">
+            Design, 3D Printing, Fabrication
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-gray-300">Brand Identity</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-gray-300">3D Printing & Prototyping</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-gray-300">Custom Fabrication</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-gray-300">Product Design</span>
+            </div>
+          </div>
+          
+          <a href="https://deltacreate.com" target="_blank" class="inline-block bg-cyan-500 text-white px-6 py-3 rounded-xl font-bold hover:scale-105 transition-all">
+            Visit Delta Design →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Section -->
+  <section id="professional" class="py-20 px-4 bg-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black mb-16 text-center">Professional</h2>
+      
+      <!-- CVS Health -->
+      <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 border border-gray-700">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="text-5xl">🏥</div>
+          <div>
+            <h3 class="text-3xl font-bold mb-2">CVS Health</h3>
+            <div class="text-xl text-cyan-400 mb-2">Product Manager</div>
+            <div class="text-sm text-gray-400">2023 - Present</div>
+          </div>
+        </div>
+        
+        <p class="text-lg text-gray-300 mb-8">
+          Leading digital product initiatives at one of America's largest healthcare companies, 
+          driving innovation in patient care and pharmacy services.
+        </p>
+        
+        <div class="mb-8">
+          <h4 class="text-lg font-bold mb-4 text-cyan-400">Key Skills</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">Product Strategy</span>
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">Roadmapping</span>
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">Agile Development</span>
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">User Research</span>
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">Analytics</span>
+            <span class="bg-gray-700 px-4 py-2 rounded-full text-sm">Stakeholder Management</span>
+          </div>
+        </div>
+        
+        <!-- Previous Experience -->
+        <div class="border-t border-gray-700 pt-6">
+          <h4 class="text-lg font-bold mb-4 text-cyan-400">Previous Experience</h4>
+          <div class="space-y-4">
+            <div>
+              <div class="font-semibold">Norwegian Cruise Line</div>
+              <div class="text-sm text-gray-400">Product & Technology</div>
+            </div>
+            <div>
+              <div class="font-semibold">Honorlock</div>
+              <div class="text-sm text-gray-400">Product Team</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-black mb-16 text-center">About</h2>
+      
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 border border-gray-700">
+        <div class="prose prose-invert max-w-none">
+          <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+            I'm Bilal Qureshi, a product manager and entrepreneur based in Boca Raton, Florida.
+          </p>
+          
+          <p class="text-lg text-gray-400 mb-6 leading-relaxed">
+            By day, I lead product initiatives at CVS Health, working on digital healthcare solutions 
+            that impact millions of patients. By night, I build software through Alpha Software Group — 
+            products that solve real problems I experience.
+          </p>
+          
+          <div class="bg-cyan-900 bg-opacity-30 rounded-xl p-6 mb-8">
+            <h3 class="text-xl font-bold mb-4 text-cyan-400">I believe in:</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>• Shipping fast and iterating based on real user feedback</li>
+              <li>• Building in public and sharing learnings</li>
+              <li>• Solving personal pain points first</li>
+              <li>• Creating value, not just features</li>
+              <li>• Balancing professional excellence with entrepreneurial ambition</li>
+            </ul>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4 text-cyan-400">Education</h3>
+              <div class="space-y-2">
+                <div class="font-semibold">Florida International University</div>
+                <div class="text-sm text-gray-400">Bachelor of Psychology, 2017</div>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold mb-4 text-cyan-400">Currently</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>→ Growing LearnBot to 100+ users</li>
+                <li>→ Exploring next venture concepts</li>
+                <li>→ Leading PM initiatives at CVS</li>
+                <li>→ Being a father to Musa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-gradient-to-br from-cyan-900 to-blue-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-8">Let's Connect</h2>
+      <p class="text-xl text-gray-300 mb-12">
+        Interested in collaboration, discussing product ideas, or just want to chat?
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <a href="mailto:bilal.k.qureshi@gmail.com" class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+          <div class="text-4xl mb-3">📧</div>
+          <div class="font-bold mb-2">Email</div>
+          <div class="text-sm text-gray-300">bilal.k.qureshi@gmail.com</div>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/bilalkqureshi/" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+          <div class="text-4xl mb-3">💼</div>
+          <div class="font-bold mb-2">LinkedIn</div>
+          <div class="text-sm text-gray-300">Connect with me</div>
+        </a>
+        
+        <a href="https://x.com" target="_blank" class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+          <div class="text-4xl mb-3">𝕏</div>
+          <div class="font-bold mb-2">X / Twitter</div>
+          <div class="text-sm text-gray-300">Follow updates</div>
+        </a>
+      </div>
+      
+      <div class="text-gray-400 text-sm">
+        <p>Based in Boca Raton, Florida 🌴</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 bg-gray-900 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <div class="text-2xl font-bold gradient-text mb-2">Bilal Qureshi</div>
+          <div class="text-sm text-gray-500">Building products that accelerate human potential</div>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+          <a href="https://learnbot.us" target="_blank" class="hover:text-cyan-400 transition-colors">LearnBot</a>
+          <a href="https://deltacreate.com" target="_blank" class="hover:text-cyan-400 transition-colors">Delta Design</a>
+          <a href="mailto:bilal.k.qureshi@gmail.com" class="hover:text-cyan-400 transition-colors">Contact</a>
+        </div>
+      </div>
+      
+      <div class="text-center text-gray-600 text-sm mt-8">
+        <p>© 2026 Bilal Qureshi. All rights reserved.</p>
+        <p class="mt-2">Powered by Alpha Software Group LLC 🐺</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+    
+    // Fade in on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
